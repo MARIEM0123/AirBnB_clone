@@ -161,9 +161,9 @@ class HBNBCommand(cmd.Cmd):
         Update or add a pair or key & value in a class instance defined
         by id"""
         nl = parse(arg)
-        obst = storage.all()
+        obdt = storage.all()
 
-        if len(argl) == 0:
+        if len(nl) == 0:
             print("** class name missing **")
             return False
         if nl[0] not in HBNBCommand.__classes:
