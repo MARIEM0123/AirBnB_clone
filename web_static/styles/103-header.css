@@ -1,5 +1,3 @@
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) */
 header {
   z-index: 4;
   color: #fff;
@@ -13,9 +11,6 @@ header {
   float: left;
   text-align: left;
 }
-/*****************************************************************/
-/* rotate burguer
-/*****************************************************************/
 
 .main_nav_burguer {
   margin: .6rem 0 0 1rem;
@@ -34,7 +29,6 @@ header {
   transition: .2s ease-in-out;
 }
 
-/* accesibility focus ARIA */
 .main_nav_burguer:focus {
   background-color: antiquewhite;
 }
@@ -46,9 +40,6 @@ header {
   transition: .2s ease-in-out;
 }
 
-/*****************************************************************/
-/* popup first level menu
-/*****************************************************************/
 .nav_bar_level1 {
   width: 0%;
   height: 0%;
@@ -56,25 +47,25 @@ header {
   transition: .2s ease-in-out;
   background-color: aliceblue;
 }
-/* hide checkbox */
+
 input {
   display: none;
 }
-/* hide second level */
+
 .nav_bar_level1 li ul {
   display: none;
 }
 
-/* hide first level */
+
 .nav_bar_level1 li{
   display: none;
 }
 
-/* display first level */
+
 #main_check:checked ~ * .nav_bar_level1 {
   display: block;
 }
-/* display first level title*/
+
 #main_check:checked ~ * .nav_bar_level1 li {
   display: block;
   font-size: 1.3rem;
@@ -83,7 +74,7 @@ input {
   font-weight: bold;
   transition: .5s ease-in-out;
 }
-/* hover link menu */
+
 .nav_bar_level1 li label span:hover,
 ul li span:hover
  {
@@ -95,7 +86,7 @@ ul li span:hover
   color: #FAFAFA;
   cursor: pointer;
 }
-/* display first level background */
+
 #main_check:checked ~ * .nav_bar_level1
 {
   display: block;
@@ -106,18 +97,18 @@ ul li span:hover
   width: 50vw;
 }
 
-/*display second level */
+
 #second_check:checked  + ul{
   display: block;
 }
 #third_check:checked  + ul{
   display: block;
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 600px) {
 
 }
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
   header {
       background-position: left;
@@ -127,7 +118,7 @@ ul li span:hover
     display: none;
   }
 }
-/* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
 
 }
